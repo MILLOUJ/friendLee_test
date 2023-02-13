@@ -9,30 +9,37 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="title">Рассчитайте стоимость автомобиля в лизинг</h1>
-        <div class="grid">
-            <div class="grid_calc">
-                <span class="grid_calc-title">Стоимость автомобиля</span>
-                <input type="text" class="grid_calc-cost">
-            </div>
-            <div class="grid_calc">
-                <span class="grid_calc-title">Первоначальный взнос</span>
-                <input type="text" class="grid_calc-cost">
-            </div>
-            <div class="grid_calc">
-                <span class="grid_calc-title">Срок лизинга</span>
-                <input type="text" class="grid_calc-cost">
-            </div>
-            <div class="grid_total">
-                <span class="grid_total-text"></span>
-                <div class="grid_total-sum"></div>
-            </div>
-            <div class="grid_month">
-                <span class="grid_month-text">4 467 313</span>
-                <div class="grid_month-sum">114 455</div>
-            </div>
-            <button><span>Оставить заявку</span></button>
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="title">Рассчитайте стоимость<br/>автомобиля в лизинг</h1>
+
+            <form class="leasing" action="">
+                <label class="leasing_calc">
+                    <span class="leasing_calc-title">Стоимость автомобиля</span>
+                    <input type="text" class="leasing_calc-cost" value="3000000"/>
+                    <input type="range" class="leasing_calc-range" min="1500000" max="10000000"/>
+                </label>
+                <label class="leasing_calc">
+                    <span class="leasing_calc-title">Первоначальный взнос</span>
+                    <input type="text" class="leasing_calc-cost" value="3000000"/>
+                    <input type="range" class="leasing_calc-range" min="10" max="60"/>
+                </label>
+                <label class="leasing_calc">
+                    <span class="leasing_calc-title">Срок лизинга</span>
+                    <input type="text" class="leasing_calc-cost" value="3000000"/>
+                    <input type="range" class="leasing_calc-range" min="6" max="120"/>
+                </label>
+                <div class="leasing_result">
+                    <span class="leasing_result-text">Сумма договора лизинга</span>
+                    <div class="leasing_result-sum">4 467 313</div>
+                </div>
+                <div class="leasing_result">
+                    <span class="leasing_result-text">Ежемесячный платеж</span>
+                    <div class="leasing_result-sum">114 455</div>
+                </div>
+                <button class="leasing_btn"><span>Оставить заявку</span></button>
+            </form>
+
         </div>
     </div>
 </body>

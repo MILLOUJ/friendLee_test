@@ -1,1 +1,2 @@
-import "./sass/components/_default.scss";
+import "./sass/_base.scss";
+import "./js/range"

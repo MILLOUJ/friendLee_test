@@ -11,15 +11,30 @@ $screen-xl-min: 1440px;
     src: url(/src/fonts/Nekst-Black.ttf);
 }
 
-.container {
-    max-width: 1440;
+@font-face {
+    font-family: "Gilroy";
+    src: url(/src/fonts/Gilroy-Regular.ttf);
+}
+
+
+.wrapper {
+    height: 100vh;
     width: 100%;
+    display: inline-flex;
+    background-color: $white;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 0 48px;
+
     .title {
         font-family: 'Nekst';
         font-weight: 900;
         font-size: 54px;
         line-height: 90%;
-        width: 753px;
-        height: 98px;
     }
 }
