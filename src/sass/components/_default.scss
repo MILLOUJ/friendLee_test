@@ -1,0 +1,25 @@
+$screen-sm-min: "(min-width: 320px) and (max-width: 767px)";
+
+$screen-md-min: 768px;
+
+$screen-lg-min: 1120px;
+
+$screen-xl-min: 1440px;
+
+@font-face {
+    font-family: "Nekst";
+    src: url(/src/fonts/Nekst-Black.ttf);
+}
+
+.container {
+    max-width: 1440;
+    width: 100%;
+    .title {
+        font-family: 'Nekst';
+        font-weight: 900;
+        font-size: 54px;
+        line-height: 90%;
+        width: 753px;
+        height: 98px;
+    }
+}
