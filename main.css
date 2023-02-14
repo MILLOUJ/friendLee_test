@@ -498,7 +498,7 @@ template {
   line-height: 90%;
 }
 .leasing_result-sum::after {
-  content: "₽";
+  content: " ₽";
   position: relative;
   top: -6px;
 }
