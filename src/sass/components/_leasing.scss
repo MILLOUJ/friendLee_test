@@ -163,7 +163,7 @@
             line-height: 90%;
 
             &::after {
-                content: "₽";
+                content: " ₽";
                 position: relative;
                 top: -6px;
                 @media screen and ($screen-lg-min) {
