@@ -14,30 +14,30 @@
             <h1 class="title">Рассчитайте стоимость<br />автомобиля в лизинг</h1>
 
             <form class="leasing" action="submit" onsubmit="formSubmit(event)">
-                <label  id="carCost" class="leasing_calc">
+                <div  id="carCost" class="leasing_calc">
                     <span class="leasing_calc-title">Стоимость автомобиля</span>
                     <div class="leasing_calc-cost">
-                        <input type="text" class="leasing_calc-cost-value" value="3000000"></input>
+                        <input type="text" class="leasing_calc-cost-value" value="3000000"/>
                         <span class="leasing_calc-cost-hint">₽</span>
                     </div>
                     <input type="range" class="leasing_calc-range slider-progress" min="1500000" max="10000000" />
-                </label>
-                <label  id="firstPay" class="leasing_calc">
+                </div>
+                <div  id="firstPay" class="leasing_calc">
                     <span class="leasing_calc-title">Первоначальный взнос</span>
                     <div class="leasing_calc-cost">
                         <input type="text" class="leasing_calc-cost-value" value="300000" />
                         <span class="leasing_calc-cost-hint highlight">10%</span>
                     </div>
                     <input type="range" class="leasing_calc-range slider-progress" value="10" min="10" max="60" />
-                </label>
-                <label  id="creditPeriod" class="leasing_calc">
+                </div>
+                <div  id="creditPeriod" class="leasing_calc">
                     <span class="leasing_calc-title">Срок лизинга</span>
                     <div class="leasing_calc-cost">
                         <input type="text" class="leasing_calc-cost-value" value="60" />
                         <span class="leasing_calc-cost-hint">мес.</span>
                     </div>
                     <input type="range" class="leasing_calc-range slider-progress" min="6" max="120" />
-                </label>
+                </div>
                 <div class="leasing_result">
                     <span class="leasing_result-text">Сумма договора лизинга</span>
                     <div class="leasing_result-sum" id="totalSum">4 467 313 ₽</div>
