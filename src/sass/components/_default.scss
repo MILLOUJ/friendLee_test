@@ -1,10 +1,10 @@
 $screen-sm-min: "(min-width: 320px) and (max-width: 767px)";
 
-$screen-md-min: 768px;
+$screen-md-min: "(min-width: 768px) and (max-width: 1119px)";
 
-$screen-lg-min: 1120px;
+$screen-lg-min: "(min-width: 1120px) and (max-width: 1439px)";
 
-$screen-xl-min: 1440px;
+$screen-xl-min: "min-width: 1440px";
 
 @font-face {
     font-family: "Nekst";
@@ -31,10 +31,19 @@ $screen-xl-min: 1440px;
     margin: auto;
     padding: 0 48px;
 
+@media screen and ($screen-md-min) {
+    padding: 0 36px;
+}
+@media screen and ($screen-sm-min) {
+    padding: 0 20px;
+}
     .title {
         font-family: 'Nekst';
         font-weight: 900;
         font-size: 54px;
         line-height: 90%;
+        @media screen and ($screen-sm-min) {
+            font-size: 34px;
+        }
     }
 }
